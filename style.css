@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* ===== LOGIN ===== */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-box {
+    background: #020617;
+    padding: 30px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#error {
+    color: red;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: #020617;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #93c5fd;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== SEARCH ===== */
+#search {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===== PRODUCTS GRID ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product {
+    background: #020617;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* ===== MODAL ===== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #020617;
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    margin: 10% auto;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+/* ===== CONTACT ===== */
+.contact-container {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 15px;
+}
+
+/* ===== تحسين تأثير الصور (بدون تخريب الجوال) ===== */
+.products img {
+    transition: transform 0.3s ease;
+}
+
+.products img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product img {
+        height: 120px;
+    }
+
+    .product h4 {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        margin-top: 20%;
+    }
+}

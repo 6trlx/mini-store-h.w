@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Mini Store</h2>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <input type="text" id="search" placeholder="Search product..." onkeyup="searchProduct()">
+
+<div class="products" id="productList"></div>
+
+</div>
+
+
+<div class="modal" id="productModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
